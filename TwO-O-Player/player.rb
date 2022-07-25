@@ -1,25 +1,12 @@
-
-
-
-
-# this class keep tracks on player score and perform deducting score action 
-class Players_score 
-  def initialize
-    @p1_score = 3
-    @p2_score = 3
+class Player
+  attr_accessor :name, :lives
+  def initialize(name)
+    @name = name
+    @lives = 3
   end
 
-  def score_deduction(player_score)
-    player_score --
+  def check_lives
+    false if @lives == 0
   end
-end
-
-# this class keep tracks of game and prompts 
-class Game 
 
 end
-
-# this class keep tracks of the question generated 
-class question
-
-ends
