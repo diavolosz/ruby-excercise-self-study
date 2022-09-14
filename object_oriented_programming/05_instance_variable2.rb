@@ -13,3 +13,6 @@ puts p.name
 
 p.name = "newName"
 puts p.name
+
+
+# test
